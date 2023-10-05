@@ -1,0 +1,30 @@
+<div class="login_form">
+    <div class="border_form">
+        <form action="http://localhost:8080/api/login" method="post">
+            <h1 class="h3 mb-3 fw-normal">Log in</h1>
+            <div class="form-floating">
+                <input type="email" name="email" class="form-control" placeholder="E-mail">
+                <label for="floatingInput">E-mail</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="div_line">
+            </div>
+            <div>
+                <a class="create_account" href="http://localhost:8080/signup">Regístrate</a>
+            </div>
+            <div class="div_line">
+            </div>
+            <button class="btn btn-primary btn-warning w-100 py-2" type="submit">Log in</button>
+            <p class="mt-5 mb-3 text-body-secondary">&copy; Pablo Galeano - CoderHouse - 2023</p>
+        </form>
+        </main>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+{{#if login_fail }}
+<script src="/static/js/login.js"></script>
+{{/if}}
